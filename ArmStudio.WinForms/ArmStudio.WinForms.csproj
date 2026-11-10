@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E68401E0-0B2A-4964-A2D1-C0C319BB584A}</ProjectGuid>
+    <OutputType>WinExe</OutputType><RootNamespace>ArmStudio.WinForms</RootNamespace><AssemblyName>ArmStudio</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion><LangVersion>7.2</LangVersion><AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <OutputPath>bin\$(Configuration)\</OutputPath><DebugSymbols>true</DebugSymbols><DebugType>portable</DebugType><ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup><Reference Include="System"/><Reference Include="System.Core"/><Reference Include="System.Drawing"/><Reference Include="System.Windows.Forms"/></ItemGroup>
+  <ItemGroup><ProjectReference Include="..\ArmStudio.Core\ArmStudio.Core.csproj"><Project>{7889AF8E-24A0-4C82-AC13-876FD93221E1}</Project><Name>ArmStudio.Core</Name></ProjectReference></ItemGroup>
+  <ItemGroup><Compile Include="Program.cs"/><Compile Include="Theme.cs"/><Compile Include="MainForm.cs"/><Compile Include="PointDialog.cs"/><Compile Include="JointJogPanel.cs"/><Compile Include="AssemblyInfo.cs"/></ItemGroup>
+  <ItemGroup><None Include="App.config"/><None Include="app.manifest"/></ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
+</Project>

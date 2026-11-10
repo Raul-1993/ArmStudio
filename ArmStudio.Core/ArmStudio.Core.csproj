@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7889AF8E-24A0-4C82-AC13-876FD93221E1}</ProjectGuid>
+    <OutputType>Library</OutputType><RootNamespace>ArmStudio.Core</RootNamespace><AssemblyName>ArmStudio.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion><LangVersion>7.2</LangVersion>
+    <OutputPath>bin\$(Configuration)\</OutputPath><DebugSymbols>true</DebugSymbols><DebugType>portable</DebugType>
+  </PropertyGroup>
+  <ItemGroup><Reference Include="System"/><Reference Include="System.Core"/><Reference Include="System.Runtime.Serialization"/><Reference Include="System.Xml"/></ItemGroup>
+  <ItemGroup><Compile Include="Models.cs"/><Compile Include="JointState.cs"/><Compile Include="ProgramParser.cs"/><Compile Include="MotionGeometry.cs"/><Compile Include="ProjectStore.cs"/><Compile Include="Transports.cs"/></ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
+</Project>

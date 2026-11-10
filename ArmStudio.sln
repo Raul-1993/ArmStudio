@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArmStudio.WinForms", "ArmStudio.WinForms\ArmStudio.WinForms.csproj", "{E68401E0-0B2A-4964-A2D1-C0C319BB584A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArmStudio.Core", "ArmStudio.Core\ArmStudio.Core.csproj", "{7889AF8E-24A0-4C82-AC13-876FD93221E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArmStudio.Tests", "ArmStudio.Tests\ArmStudio.Tests.csproj", "{1DFB789F-DFDB-4E3B-BBC9-9A31C9DDEAE5}"
+EndProject
+Global
+    GlobalSection(SolutionConfigurationPlatforms) = preSolution
+        Debug|Any CPU = Debug|Any CPU
+        Release|Any CPU = Release|Any CPU
+    EndGlobalSection
+    GlobalSection(ProjectConfigurationPlatforms) = postSolution
+        {E68401E0-0B2A-4964-A2D1-C0C319BB584A}.Debug|Any CPU.ActiveCfg = Debug|AnyCPU
+        {E68401E0-0B2A-4964-A2D1-C0C319BB584A}.Debug|Any CPU.Build.0 = Debug|AnyCPU
+        {E68401E0-0B2A-4964-A2D1-C0C319BB584A}.Release|Any CPU.ActiveCfg = Release|AnyCPU
+        {E68401E0-0B2A-4964-A2D1-C0C319BB584A}.Release|Any CPU.Build.0 = Release|AnyCPU
+        {7889AF8E-24A0-4C82-AC13-876FD93221E1}.Debug|Any CPU.ActiveCfg = Debug|AnyCPU
+        {7889AF8E-24A0-4C82-AC13-876FD93221E1}.Debug|Any CPU.Build.0 = Debug|AnyCPU
+        {7889AF8E-24A0-4C82-AC13-876FD93221E1}.Release|Any CPU.ActiveCfg = Release|AnyCPU
+        {7889AF8E-24A0-4C82-AC13-876FD93221E1}.Release|Any CPU.Build.0 = Release|AnyCPU
+        {1DFB789F-DFDB-4E3B-BBC9-9A31C9DDEAE5}.Debug|Any CPU.ActiveCfg = Debug|AnyCPU
+        {1DFB789F-DFDB-4E3B-BBC9-9A31C9DDEAE5}.Debug|Any CPU.Build.0 = Debug|AnyCPU
+        {1DFB789F-DFDB-4E3B-BBC9-9A31C9DDEAE5}.Release|Any CPU.ActiveCfg = Release|AnyCPU
+        {1DFB789F-DFDB-4E3B-BBC9-9A31C9DDEAE5}.Release|Any CPU.Build.0 = Release|AnyCPU
+    EndGlobalSection
+EndGlobal

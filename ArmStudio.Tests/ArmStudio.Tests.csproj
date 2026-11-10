@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration><Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1DFB789F-DFDB-4E3B-BBC9-9A31C9DDEAE5}</ProjectGuid><OutputType>Exe</OutputType>
+    <RootNamespace>ArmStudio.Tests</RootNamespace><AssemblyName>ArmStudio.Tests</AssemblyName><TargetFrameworkVersion>v4.8</TargetFrameworkVersion><LangVersion>7.2</LangVersion>
+    <OutputPath>bin\$(Configuration)\</OutputPath><DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup><Reference Include="System"/><Reference Include="System.Core"/></ItemGroup>
+  <ItemGroup><ProjectReference Include="..\ArmStudio.Core\ArmStudio.Core.csproj"><Project>{7889AF8E-24A0-4C82-AC13-876FD93221E1}</Project><Name>ArmStudio.Core</Name></ProjectReference><Compile Include="Program.cs"/><Compile Include="JointChecks.cs"/></ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
+</Project>
