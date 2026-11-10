@@ -4,7 +4,7 @@
 
 Extrae todo el ZIP y abre `ArmStudio-Windows/ArmStudio.exe`. Conserva `ArmStudio.Core.dll` y `ArmStudio.exe.config` junto al ejecutable. Requiere Windows 10/11 con .NET Framework 4.8.
 
-El ZIP se ha compilado y verificado en Mono/Linux. El flujo de GitHub Actions comprueba la compilación y el núcleo en Windows cuando está disponible. El firmware USB incluido en el código es de diagnóstico, sin movimiento físico de motores.
+El ZIP contiene la compilación portátil preparada con Mono/Linux. El mismo código compila con MSBuild y supera las 53 comprobaciones del núcleo en Windows mediante [GitHub Actions](https://github.com/Raul-1993/ArmStudio/actions/runs/42823960401). La revisión manual del formulario en Windows y las pruebas con placa física siguen pendientes. El firmware USB incluido en el código es de diagnóstico, sin movimiento físico de motores.
 
 SHA-256 del ZIP:
 

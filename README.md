@@ -1,5 +1,7 @@
 # ArmStudio 0.2
 
+[![Compilación y pruebas en Windows](https://github.com/Raul-1993/ArmStudio/actions/workflows/build.yml/badge.svg)](https://github.com/Raul-1993/ArmStudio/actions/workflows/build.yml)
+
 Mando de control robótico de escritorio en **C# y Windows Forms**, pensado para practicar programación de trayectorias y evolucionar hacia un brazo impreso en 3D. Interfaz en español, sin representación 3D del robot.
 
 ## Descargar y probar en Windows
@@ -124,7 +126,7 @@ msbuild ArmStudio.sln /m /p:Configuration=Release
 
 También puedes ejecutar `tools/build.ps1` desde PowerShell: compila, verifica y prepara `dist/ArmStudio`. La configuración de GitHub Actions incluida repite ese proceso en Windows cuando subas el código a tu repositorio.
 
-Esta entrega se compiló y comprobó en Linux con Mono y las referencias de .NET Framework 4.8. Pasaron 53 comprobaciones del núcleo (24 de articulaciones), 33 del formulario nativo, 5 escenarios serie con puerto emulado y 9 comprobaciones del protocolo del sketch. Las imágenes son capturas del formulario ejecutado; el aspecto de algunos controles nativos cambia en Windows. Aún debe comprobarse en un PC Windows y en una placa Arduino física. El compilador xbuild de Mono advierte sobre su antiguo toolset, aunque dispone de las referencias 4.8; no se ha usado esa advertencia como prueba de ejecución en Windows.
+La compilación con MSBuild y las 53 comprobaciones del núcleo (24 de articulaciones) pasaron en Windows mediante [GitHub Actions](https://github.com/Raul-1993/ArmStudio/actions/runs/42823960401). Además, en Linux con Mono pasaron 33 comprobaciones del formulario nativo, 5 escenarios serie con puerto emulado y 9 comprobaciones del protocolo del sketch. Las imágenes son capturas del formulario ejecutado; el aspecto de algunos controles nativos cambia en Windows. Quedan pendientes la revisión manual del formulario en un PC Windows y las pruebas con una placa Arduino física.
 
 ## Siguiente etapa: el brazo físico
 
